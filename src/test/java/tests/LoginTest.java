@@ -1,9 +1,9 @@
-package ui;
+package tests;
 
 import com.microsoft.playwright.*;
 import org.testng.annotations.Test;
 
-public class TestUI {
+public class LoginTest {
 
     @Test
     public void testGoogle() {
