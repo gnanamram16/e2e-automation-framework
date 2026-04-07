@@ -21,5 +21,9 @@ jobs:
       - name: Install dependencies
         run: mvn clean install
 
+
+      - name: Install Playwright Browsers
+        run: mvn exec:java -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install"
+
       - name: Run Tests
         run: mvn test
